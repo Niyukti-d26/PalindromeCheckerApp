@@ -9,7 +9,21 @@ public class PalindromeCheckerApp {
         }
         return true;
     }
+    private static void reverseAndCheck(String text) {
+        String reversed = "";
 
+        for (int i = text.length() - 1; i >= 0; i--) {
+            reversed += text.charAt(i);
+        }
+
+        System.out.println("UC3: Reversed text is: " + reversed);
+
+        if (text.equals(reversed)) {
+            System.out.println("UC3: Text is a palindrome.");
+        } else {
+            System.out.println("UC3: Text is not a palindrome.");
+        }
+    }
     public static void main(String[] args) {
         // UC1
         System.out.println("System initialized successfully");
@@ -26,6 +40,9 @@ public class PalindromeCheckerApp {
         } else {
             System.out.println("UC2: Text is not a palindrome.");
         }
+
+        // UC3: Reverse the string and compare
+        reverseAndCheck(text);
 
     }
 }
