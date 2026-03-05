@@ -11,11 +11,8 @@ public class PalindromeCheckerApp {
     }
 
     public static void main(String[] args) {
-        // UC1
-        System.out.println("System initialized successfully");
-        Scanner sc = new Scanner(System.in);
-
         // UC2
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the input text: ");
         String text = sc.nextLine();
 
